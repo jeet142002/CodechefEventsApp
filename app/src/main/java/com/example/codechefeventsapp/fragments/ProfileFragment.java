@@ -1,14 +1,16 @@
 package com.example.codechefeventsapp.fragments;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+
 import com.example.codechefeventsapp.R;
+
+import static com.example.codechefeventsapp.activities.MainActivity.TAG;
 
 public class ProfileFragment extends Fragment {
 
@@ -18,6 +20,7 @@ public class ProfileFragment extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate: Profile");
         super.onCreate(savedInstanceState);
     }
 
